@@ -1,5 +1,5 @@
 # CoLo (extractive version)
-Code for COLING 2022 paper: *[CoLo: A Contrastive Learning based Re-ranking Framework for One-Stage Summarization](https://arxiv.org/abs/2004.08795)*
+Code for COLING 2022 paper: *[CoLo: A Contrastive Learning based Re-ranking Framework for One-Stage Summarization]()*
 A lightweight re-ranking based summarization system that is **x7** faster than the two-stage system [MatchSum](https://arxiv.org/abs/2004.08795) while maintaining on-par performance. 
 
 Further increasing the size of the candidate set will result in better performance but will not significantly decrease the speed.
@@ -34,13 +34,13 @@ To **train** a one-stage re-ranking summarization model on CNNDM, you can use th
 
 ```
 #If you do not have a warmed-up checkpoint, you should use --warmup True to train the extractive model with BCELoss 
-python run_cnndm.py --mode train --gpus 0,1,2,3 --batch_size 32 --warmup True
+python run_cnndm.py --mode train --gpus 0,1,2,3 --batch_size 64 --warmup True
 ```
 the warmed-up checkpoint will be saved to `./warmed_up/CNNDM/pretrain.ext.pt` by default. We also prepare a [warmed-up checkpoint](https://drive.google.com/file/d/11rAC5ghms7NLmdJlRBRbrE2JDeFcpedV/view?usp=sharing) to help skip the warmup stage.
 ```
 #If you already have a warmed-up checkpoint:
 mv path/to/the/checkpoint.pt ./warmed_up/CNNDM/pretrain.ext.pt
-python run_cnndm.py --mode train --gpus 0,1,2,3 --batch_size 32 --warmup False
+python run_cnndm.py --mode train --gpus 0,1,2,3 --batch_size 64 --warmup False
 ```
 After completing the training process, several best checkpoints are stored in a folder named after the training start time, for example, `./checkpoints/CNNDM/2022-05-22-09-24-51`. 
 
