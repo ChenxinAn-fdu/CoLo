@@ -36,6 +36,6 @@ if __name__ == '__main__':
             run(wp_cmd)
 
         train_cmd = f"python train.py --mode train  --dataset {DATASET} --batch_size {args.batch_size} --warmup False  --gpus {args.gpus}  " \
-                    f" --n_epochs 3 --ext_num {args.ext_num}  --save_path checkpoints/{DATASET} --validate_every {args.validate_every // 2} "
+                    f" --n_epochs 5 --ext_num {args.ext_num}  --save_path checkpoints/{DATASET} --validate_every {args.validate_every // 2} "
         print("========== make sure there is a warmed-up `checkpoint warmup/CNNDM/pretrain.ext.pt` =========")
         run(train_cmd)
