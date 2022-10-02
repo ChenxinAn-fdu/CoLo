@@ -1,6 +1,6 @@
 # CoLo (extractive version)
 Code for COLING 2022 paper: *[CoLo: A Contrastive Learning based Re-ranking Framework for One-Stage Summarization]()*
-A lightweight re-ranking based summarization system that is **x7** faster than the two-stage system [MatchSum](https://arxiv.org/abs/2004.08795) while maintaining on-par performance. 
+A lightweight re-ranking based summarization system that is **x7** faster than the two-stage system [MatchSum](https://arxiv.org/pdf/2209.14569v1.pdf) while maintaining on-par performance. 
 
 Further increasing the size of the candidate set will result in better performance but will not significantly decrease the speed.
 
@@ -14,7 +14,7 @@ Further increasing the size of the candidate set will result in better performan
 - [transformers](https://github.com/huggingface/transformers) 4.10 + (for extractive verison)
 - [transformers](https://github.com/huggingface/transformers) 4.20 + (for abstractive verison)
 
-	
+
 All code only supports running on Linux.
 
 ## Data
