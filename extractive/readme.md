@@ -20,8 +20,8 @@ All code only supports running on Linux.
 ## Data
 
 We have already processed CNN/DailyMail dataset (document-max-length = 512), 
-you can download it through [this link](https://drive.google.com/file/d/1vCpTPyZwDFIcQ4yZX4YXLdqjugmxfmka/view?usp=sharing), and move it to `./datasets/CNNDM/`
-You can also download the raw data from [here](https://drive.google.com/file/d/1YXPJYcu5WRorfiFRGw70brGs1RKEQfHk/view?usp=sharing) and run our preprocess script  `preprocess/ext_label_and_tokenize.py` for other datasets or for the dataset whose document-max-length is 1024 which will benefit the performance.
+you can download it through [this link](https://drive.google.com/file/d/1vCpTPyZwDFIcQ4yZX4YXLdqjugmxfmka/view?usp=sharing), and move it to `./datasets/CNNDM/`.
+You can also download the raw data from [here](https://drive.google.com/file/d/1YXPJYcu5WRorfiFRGw70brGs1RKEQfHk/view?usp=sharing), but remember to run our preprocess script  `preprocess/ext_label_and_tokenize.py` for pre-process. The raw dataset must take the format of `jsonl`.  If you want to try other dataset or use the document-max-length = 1024, please run the preprocess script before training.
 
 
 ## Train
