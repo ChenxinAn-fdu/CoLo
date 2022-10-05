@@ -53,11 +53,21 @@ python train.py --mode test --save_path checkpoints/CNNDM/2022-05-22-09-24-51 --
 This will produce the generated results: results/CNNDM/2022-05-22-09-24-51/filename.jsonl
 
 
-## evaluation
+## Evaluation
 This is an example to evaluate the generated results with pyrouge
 ```
 python ../evaluation/eval_with_pyrouge.py --sys_path results/CNNDM/2022-05-22-09-24-51/filename.jsonl
 ```
 
+## Citing
+Please cite our work if you find this paper or codes useful.
+```
+@article{an2022colo,
+  title={COLO: A Contrastive Learning based Re-ranking Framework for One-Stage Summarization},
+  author={An, Chenxin and Zhong, Ming and Wu, Zhiyong and Zhu, Qin and Huang, Xuanjing and Qiu, Xipeng},
+  journal={arXiv preprint arXiv:2209.14569},
+  year={2022}
+}
+```
 
 
