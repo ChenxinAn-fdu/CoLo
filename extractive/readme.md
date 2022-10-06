@@ -50,7 +50,7 @@ You can run the following command to get the results on test set:
 ```
 python train.py --mode test --save_path checkpoints/CNNDM/2022-05-22-09-24-51 --gpus 0
 ```
-This will produce the generated results: results/CNNDM/2022-05-22-09-24-51/filename.jsonl
+This will produce the generated results at: `results/CNNDM/2022-05-22-09-24-51/filename.jsonl`
 
 
 ## Evaluation
