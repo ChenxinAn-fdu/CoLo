@@ -3,5 +3,5 @@ Code for COLING 2022 paper: [COLO: A Contrastive Learning based Re-ranking Frame
 Details can be found in the  `extractive` and `abstractive` folder respectively
 
 
-The extractive codes have been updated, and the abstractive codes will be released before 10th Oct.
+The extractive codes have been updated, and the abstractive codes will be released before 15th Oct.
 We are pleased to answer any questions about this paper or codes ^_^ `cxan20@fudan.edu.cn` 
